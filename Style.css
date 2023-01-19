@@ -1,0 +1,723 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.max-width
+  {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+  }
+/* Style for Navigation Bar */
+.navbar
+  {
+    position: fixed;
+    width: 100%;
+    padding: 15px 0px;
+    font-family: 'Monserrat', sans-serif;
+    background: turquoise;
+    z-index: 1;
+  }
+.navbar.sticky
+  {
+    padding: 15px;
+    background: tomato;
+
+  }
+  .navbar .max-width
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.navbar .logo a
+  {
+    color: #fff;
+    font-size: 35px;  
+    font-weight: 600;
+  }
+
+.navbar .logo a:hover
+  {
+    color: red;
+  }
+
+.navbar .logo a span
+  {
+    color: white;
+  }
+.navbar .logo a span:hover
+  {
+    color: blue;
+  }
+
+.navbar .menu li
+  {
+    list-style: none;
+    display: inline-block;
+  }
+.navbar .menu li a
+  {
+    display: block;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 30px;
+    transition: all 0.5s linear;
+  }
+
+  .navbar .menu li a:hover
+  {
+    color: red;
+  }
+/*Menu Button*/
+.menu-btn
+  {
+    cursor: pointer;
+  }
+  /* Style for Home Section */
+.home{
+    display: flex;
+    background: URL("/Users/dell/Documents/LCT5_WDProject1/images/banner.jpg") no-repeat center;
+    height: 100vh;
+    color: red;
+    min-height: 500px;
+    max-height: 720px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Montserat", sans-serif;
+  }
+/* ******************************************* */
+/* Building You Section - Section 6 Rank 6B*/
+.home .max-width
+  {
+    margin: auto 0 auto 30px;
+  }
+/* *************************************** */
+/* Home Content (Text 1 Section) - Section 6 Rank 6B*/
+.home .home-content .text-1
+  {
+    font-size: 25px;
+  }
+/* ******************************************** */
+/* Home Content (Text 2 Section) - Section 6 Rank 6B*/
+.home .home-content .text-2
+  {
+    font-size: 50px;
+    font-weight: 700;
+    margin-left: -2px;
+  }
+/* ******************************************** */
+/* Home Content (Text 3 Section) - Section 6 Rank 6B*/
+.home .home-content .text-3
+  {
+    font-size: 25px;
+  }
+/* ******************************************** */
+/* Home Content (Learn More Section) - Section 6 Rank 6B*/
+.home .home-content a
+  {
+    display: inline-block;
+    background: red;
+    color: white;
+    font-size: 20px;
+    padding: 12px 36px;
+    margin-top: 30px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+/* ***************************************************** */
+/* Home Content (Learn More Section) - Section 6 Rank 6B*/
+.home .home-content a:hover
+  {
+    color: white;
+    background: turquoise;
+
+  }
+/* **************************************************** */
+/* Style for About Section */
+section
+  {
+    padding: 100px 0;
+  }
+.about
+  {
+    display: flex;
+    background: URL("/users/dell/Documents/LCT5_WDProject1/images/banner-5.jpg") no-repeat center; 
+    background-size: cover;
+    background-attachment: scroll;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    
+  }
+/* ******************************** */
+/* About Title - Section 6 Rank 6F*/
+.about .title
+  {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 50px; 
+  }
+/* About Content Formatting- Section 6 Rank 6G*/
+.about .about-content
+  {
+    display: flex;
+    flex-wrap: wrap ;
+    color: black;
+    align-items: center;
+    justify-content: space-between;
+  }
+      /* Column Left Formatting- Section 6 Rank 6G*/
+      .about .about-content .left
+        {
+          width: 45%;
+        }
+      /* Column Left Image Formatting - Section 6 Rank 6G*/
+      .about .about-content .left img
+        {
+          height: 300px;
+          width: 300px;
+          object-fit: cover;
+          border-radius: 60px;
+        }
+      /* Column Right Formatting- Section 6 Rank 6G*/
+      .about .about-content .right
+        {
+          width: 55%;
+        }
+      /* Column Right Text Formatting - Section 6 Rank 6G*/
+      .about .about-content .right .text
+        {
+          margin-bottom: 20px;
+         
+        }
+      /* Column Right Text Formatting - Section 6 Rank 6G*/
+      .about .about-content .right p
+        {
+          font-size:  25px;
+          text-align: justify;
+        }
+/* ****************************************** */
+/* Services Formatting- Section 6 Rank 7A*/
+.Services
+  {
+    color:black;
+    background: tomato;
+  }
+.Services .title
+  {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 30px;
+    padding-bottom: 50px;
+  }
+.Services .services-content
+  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;  
+    justify-content: space-between;
+  } 
+.Services .services-content .card
+  {
+    width: calc(33% - 20px);
+    background: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+  }
+
+
+
+
+
+/* Card Animation Formatting- Section 7 Rank 7B*/
+      /* Changing Background color when mouse placed at the top of the card*/
+      .Services .services-content .card:hover
+        {
+          background-color: aqua;
+        } 
+      /* Animate the card  & box when mouse placed at the top of the card*/
+      .Services .services-content .card .box
+        {
+          transition: all 0.3s ease;
+        }
+      /* Resize the element under the card & box*/
+     .Services .services-content .card .box:hover
+        {
+          transform: scale(1.05);
+        }
+      /* Resize the images under the card */
+      .Services .services-content .card img
+        {
+          height: 60px;
+          width: 60px;
+        }
+      /* Format the text title inside the box */
+      .Services .services-content .text
+        {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 25px;
+          font-weight: 600;
+          margin: 10px 0;
+        }
+      /* Format the paragraph under services-content */
+      .Services .services-content p
+        {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 18px;
+        }
+/* ************************************* */
+/* Skills Formatting- Section 7 Rank 7E*/
+  .Skills
+  {
+    display: flex;
+    background: URL("/Users/dell/Documents/LCT5_WDProject1/images/banner-3.jpg") no-repeat center; 
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+  }
+      /* Formatting The Title "SKILLS*/
+     .Skills .title
+        {
+          text-align: center;
+          font-size: 30px;
+          padding-bottom: 50px;
+          color: black;
+        }
+      /* Formatting The Title "SKILLS DESCRIPTIONS*/
+      .Skills .Skills-content
+        {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+          color: black;
+        }
+      /* Formatting The Column into 50% width using calc()*/
+      .Skills .Skills-content .column
+        {
+          width: calc(50% - 30px)
+        }  
+      /* Formatting The Left Side Text Title*/
+      .Skills .Skills-content .left .text
+        {
+          margin-bottom: 20px;
+          font-weight: 600;
+          color: black;
+          
+        }
+      /* Formatting The Left Paragraph*/
+      .Skills .Skills-content .left p
+        {
+          text-align: justify;
+          font-size: 18px;
+          color: black;
+        }
+      /* Formatting The Hyperlink "Read More" */
+      .Skills .Skills-content .left a
+      {
+        display: inline-block;
+        background: red;
+        color: white;
+        font-size: 20px;
+        padding: 12px 36px;
+        margin-top: 30px;
+        border-radius: 20px;
+      }
+      /* Formatting The Hyperlink "Read More" into Hover*/
+      .Skills .Skills-content .left a:hover
+        {
+          color: white;
+          background: turquoise;
+        }
+      /* Formatting The Bar Margin*/
+      .Skills .Skills-content .right .bar
+        {
+          margin-bottom: 15px;
+        }
+      /* Formatting All The information Under Right Bar*/
+      .Skills .Skills-content .right .info
+        {
+          display: flex;
+          margin-bottom: 5px;
+          align-items: center;
+          justify-content: space-between;
+        }
+      .Skills .Skills-content .right .info:hover
+        {
+          color: red;
+          font-weight: 750;
+        }
+      /* Formatting All The information Under Right Span*/
+      .Skills .Skills-content .right .span
+        {
+          font-weight: 600;
+          font-size: 18px;
+          padding: 5px;
+        }
+      /* Formatting Bar Line*/
+      .Skills .Skills-content .right .line
+        {
+          height: 10px;
+          width: 100%;
+          background: rgb(183, 171, 171);
+          position: relative;
+        }
+      /* Formatting Bar Line with Before*/
+      .Skills .Skills-content .right .line::before
+        {
+          content: "";
+          position: absolute;
+          height: 100%;
+          left: 0;
+          right: 0;
+          background: rgb(212, 70, 45);
+        }
+      /* Formatting Bar Line Into 90% Width Under HTML*/
+      .Skills .Skills-content .right .html5::before
+        {
+          width: 90%;
+        }
+      /* Formatting Bar Line Into 90% Width Under CSS3*/
+      .Skills .Skills-content .right .css3::before
+        {
+          width: 90%;
+        }
+      /* Formatting Bar Line Into 85% Width Under JAVASCRIPT*/
+        .Skills .Skills-content .right .javascript::before
+        {
+          width: 85%;
+        }
+      /* Formatting Bar Line Into 85% Width Under PHP*/
+      .Skills .Skills-content .right .php::before
+        {
+          width: 85%;
+        }
+      /* Formatting Bar Line Into 80% Width Under MYSQL*/
+      .Skills .Skills-content .right .mysql::before
+        {
+          width: 80%;
+        }
+/* Contacts Formatting- Section 8 Rank 8A*/
+.Contact
+  {
+    
+    display: flex;
+    background: URL("/Users/dell/Documents/LCT5_WDProject1/images/banner-4.jpg") no-repeat center; 
+        /*"/Users/Vin/Documents/Online-LCT/LCT5_WDProject1/images/banner.jpg"*/
+   /*height: 100vh;
+    min-height: 500px;
+    max-height: 720px;*/
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+  }
+      /* Formatting The Title "CONTACTS*/
+      .Contact .title
+        {
+          text-align: center;
+          font-size: 30px;
+          padding-bottom: 50px;
+        }
+      /* Formatting The Title "CONTACT DESCRIPTIONS*/
+      .Contact .Contact-content
+        {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+        }
+      /* Formatting The Column Content into 50% width using calc()*/
+      .Contact .Contact-content .column
+        {
+          width: calc(50% - 30px);
+        }
+      /* Formatting The Contact Column Text Title*/
+      .Contact .Contact-content .column .text
+        {
+          color: red;
+          font-size: 25px;
+          font-weight: 600;
+          margin: 10px 0;
+        }
+      /* Formatting The Contact Paragraph*/
+      .Contact .Contact-content .left p
+        {
+          font-size: 18px;
+          text-align: justify;
+        }
+      .Contact .Contact-content .row
+        {
+          display: flex;
+          height: 65px;
+          align-items: center;
+        }
+        .Contact .Contact-content .row .info
+          {
+            margin-left: 30px;
+          }
+      /* Formatting The Sizes of Contact Images/Icon*/
+
+        
+      .Contact .Contact-content .left img
+        {
+          height: 20px;
+          width: 20px;
+        }
+        
+      .Contact .Contact-content .info .head
+        {
+          color: red;
+          font-weight: 600;
+          padding: 5px 0;
+        }
+      
+      .Contact .Contact-content .info .subtitle
+        {
+          font-weight: 600;
+          color: black;
+        }
+
+      .Contact .right form .fields
+        {
+          display: flex;
+        }
+
+      .Contact .right form .field,
+      .Contact .right form .fields, .field
+         {
+          height: 45px;
+          width: 100%;
+          margin-bottom: 10px;
+         }
+          
+      .Contact .right form .textarea
+         {
+          height: 80px;
+          width: 100%;
+         }
+      .Contact .right form .name
+         {
+          margin-right: 10px;
+         }
+      .Contact .right form .email
+         {
+          margin-left: 10px;
+         }
+      .Contact .right form .field input,
+      .Contact .right form .textarea textarea
+         {
+          height: 100%;
+          width: 100%;
+          border: 1% solid lightgray;
+          border-radius: 6px;
+          outline: none;
+          padding: 0 15px;
+         }
+      .Contact .right form .field input:focus,
+      .Contact .right form .textarea textarea:focus
+          {
+            border-color: red;
+          }
+      .Contact .right form .textarea .textarea
+          {
+            padding-top: 10px;
+            resize: none;
+          }
+          
+      .Contact .right form button
+          {
+             height: 50px;
+             width: 50px;
+          }
+          
+      .Contact .right form .button button
+          {
+             width: 50%; 
+            /*height:100%; */
+             background: red;
+             border: 2px solid red;
+             outline: none;
+             color: white;
+             font-size: 18px;
+             border-radius: 6px;  
+             cursor: pointer;
+          }
+      .Contact .right form .button button:hover
+          {
+            color:white;
+            border: 2px solid white;
+            background: turquoise;
+          }
+/*Footer Styling*/
+      footer
+          {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            background: black;
+            color: white;
+            padding: 50px 25px;
+          }
+
+      footer span a
+          {
+            color: red;
+          }
+      footer span a:hover
+          {
+            text-decoration: underline;
+          }
+/* Responsive Media Query*/
+  @media (max-width: 1920px)
+          {
+            .home .max-width
+            {
+              margin-left: 0px;
+            }
+            .menu-btn
+            {
+              display: none;
+              z-index: 999;
+            }
+          }
+  
+  @media (max-width: 1104px)
+          {
+            .about .about-content .left img
+              {
+                height: 350px;
+                width: 350px;
+              }
+              .menu-btn
+              {
+                display: none;
+                z-index: 999;
+              } 
+          }
+         
+  @media (max-width: 991px)
+          {
+            .max-width
+              {
+                padding: 0 50px;
+              }
+              .menu-btn
+            {
+              display: none;
+              z-index: 999;
+            }
+          }
+
+  @media (max-width: 947px)
+          {
+            .menu-btn
+              {
+              display: block;
+              z-index: 999;
+              }
+            .navbar .menu
+              {
+                position: fixed;
+                height: 60vh;
+                width: 100%;
+                left: -100%;
+                top: 0;
+                background: black;
+                opacity: 85%;
+                text-align: center;
+                padding-top: 80px; 
+               
+              }
+                
+                
+              
+            .navbar .menu li
+              {
+                display: block;
+              }
+              
+            .navbar .menu li a
+              {
+                display: inline-block;
+                margin: 20px;
+                font-size: 20px;
+              }
+              
+            .home .home-content .text-2
+              {
+                font-size: 35px;
+              }
+            .home .home-content a
+                {
+                  font-size:  18px;
+                  padding: 20px 30px;
+                }
+                
+            .max-width
+                {
+                  max-width: 930px;
+                }
+                 
+            .about .about-content .column  
+                {
+                  width:  100%;
+                }
+            .about .about-content .left
+                {
+                  display: flex;
+                  justify-content: center;
+                  margin: 0 auto 60px;
+                }
+            .about .about-content .right
+                {
+                  flex: 100%;
+                }
+            .Services .services-content .card
+                {
+                  width: calc(50%-10px); 
+                  margin-bottom: 35px;
+                }
+            .Skills .Skills-content .column
+                {
+                  width: 100%;
+                  margin-bottom: 35px;
+                }
+            .Contact .Contact-content .column
+                {
+                  width: 100%;
+                  margin-bottom: 35px;
+                }
+          }
+  @media (max-width: 690px)
+          {
+            .max-width
+            {
+              padding: 0 23px;
+            }
+            .Services .services-content .card
+            {
+              width: 100%;
+            }
+          }
+    @media (max-width: 500px)
+          {
+            .Contact .right -webkit-flow-from: .fields
+            {
+              flex-direction: column;
+              margin-bottom: 50px;
+            }
+            .contact .right form .name,
+            .contact .right form .email
+            {
+              margin-bottom: 10px;
+            }
+          }
